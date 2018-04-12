@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MediaEssentialsSitecoreModule {
+namespace MediaEssentials {
     
     
     public partial class ExportMedia {

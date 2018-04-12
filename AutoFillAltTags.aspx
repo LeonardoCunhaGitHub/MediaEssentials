@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="Layout.Master" AutoEventWireup="true" CodeBehind="AutoFillAltTags.aspx.cs" Inherits="MediaEssentialsSitecoreModule.AutoFillAltTags" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="Layout.Master" AutoEventWireup="true" CodeBehind="AutoFillAltTags.aspx.cs" Inherits="MediaEssentials.AutoFillAltTags" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="main" runat="server">

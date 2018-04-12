@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Web.UI;
-using MediaEssentialsSitecoreModule.Common;
+using MediaEssentials.Common;
 using Sitecore;
 using Sitecore.Configuration;
 using Sitecore.Data;
@@ -12,7 +12,7 @@ using Sitecore.Diagnostics;
 using Sitecore.IO;
 using Sitecore.Zip;
 
-namespace MediaEssentialsSitecoreModule
+namespace MediaEssentials
 {
     public partial class ExportMedia : Page
     {
@@ -25,7 +25,7 @@ namespace MediaEssentialsSitecoreModule
         protected void Page_Load(object sender, EventArgs e)
         {
             var scriptManager = ScriptManager.GetCurrent(Page);
-            scriptManager?.RegisterPostBackControl(btnDownload);
+            if (scriptManager != null) scriptManager.RegisterPostBackControl(btnDownload);
 
             if (IsPostBack) return;
 
@@ -200,7 +200,7 @@ namespace MediaEssentialsSitecoreModule
             {
                 if (stream == null)
                 {
-                    lbOutput.Text = $"Cannot find media data for item '{mediaItem.MediaPath}'";
+                    lbOutput.Text = @"Cannot find media data for item '{mediaItem.MediaPath}'";
                     return;
                 }
 

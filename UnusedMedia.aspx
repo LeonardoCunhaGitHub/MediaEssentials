@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="Layout.Master" AutoEventWireup="true" CodeBehind="UnusedMedia.aspx.cs" Inherits="MediaEssentialsSitecoreModule.UnusedMedia" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="Layout.Master" AutoEventWireup="true" CodeBehind="UnusedMedia.aspx.cs" Inherits="MediaEssentials.UnusedMedia" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="main" runat="server">
@@ -19,7 +19,7 @@
                     <div class="form-group col-lg-6 ">
                         <div class="card">
                             <div class="card-header">
-                                Export
+                                Unused Media
                             </div>
                             <div class="card-body">
                                 <div class="row">

@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="MediaEssentialsSitecoreModule.Global" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="MediaEssentials.Global" Language="C#" %>

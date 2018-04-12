@@ -1,15 +1,15 @@
-﻿using MediaEssentialsSitecoreModule.Common;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using MediaEssentials.Common;
 using Sitecore;
 using Sitecore.Data;
 using Sitecore.Data.Managers;
 using Sitecore.Mvc.Extensions;
 using Sitecore.Resources.Media;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace MediaEssentialsSitecoreModule
+namespace MediaEssentials
 {
     public partial class AutoFillAltTags : System.Web.UI.Page
     {

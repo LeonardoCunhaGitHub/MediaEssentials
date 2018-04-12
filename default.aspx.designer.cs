@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MediaEssentialsSitecoreModule {
+namespace MediaEssentialsMVC {
     
     
     public partial class MediaEssentials {

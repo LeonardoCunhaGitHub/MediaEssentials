@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MediaEssentialsSitecoreModule
+namespace MediaEssentialsMVC
 {
     public partial class MediaEssentials : System.Web.UI.Page
     {

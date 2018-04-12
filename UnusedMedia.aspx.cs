@@ -1,11 +1,11 @@
-﻿using MediaEssentialsSitecoreModule.Common;
-using Sitecore.Data;
-using Sitecore.Data.Items;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using MediaEssentials.Common;
+using Sitecore.Data;
+using Sitecore.Data.Items;
 
-namespace MediaEssentialsSitecoreModule
+namespace MediaEssentials
 {
     public partial class UnusedMedia : System.Web.UI.Page
     {
