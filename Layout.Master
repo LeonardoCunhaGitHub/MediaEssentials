@@ -63,12 +63,14 @@
             <div class="col"></div>
             <div class="col">
                 <h2>Media Essentials</h2>
+                <p><a class="whitelink" href="https://marketplace.sitecore.net/Modules/S/Sitecore_Media_Essentials.aspx?sc_lang=en" target="_blank">https://marketplace.sitecore.net</a></p>
                 <p>Version:  <%= MeVersion %> </p>
             </div>
             <div class="col">
                 <h2>Contact</h2>
                 <p><a class="whitelink" href="http://www.leonardocunha.net" target="_blank">http://www.leonardocunha.net</a></p>
                 <p><a class="whitelink" href="https://twitter.com/leositecore" target="_blank">https://twitter.com/leositecore</a></p>
+                <p><a class="whitelink" href="https://sitecore.stackexchange.com/users/1203/leonardo-cunha" target="_blank">https://sitecore.stackexchange.com/leonardo-cunha</a></p>
             </div>
         </div>
     </div>

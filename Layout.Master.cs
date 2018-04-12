@@ -24,8 +24,8 @@ namespace MediaEssentials
                                   "/sitecore/login?returnUrl=%2fsitecore%2fadmin%2fmediaessentials%2f");
 
             SetActiveNavigation();
-
-            var v = new Version(1, 1, 0, 0);
+            //var v = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
+            var v = new Version(1, 2, 0, 0);
             MeVersion = v.Major + "." + v.Minor;
         }
 
