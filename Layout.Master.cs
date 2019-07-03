@@ -25,7 +25,7 @@ namespace MediaEssentials
 
             SetActiveNavigation();
             //var v = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
-            var v = new Version(1, 2, 0, 0);
+            var v = new Version(2, 0, 0, 0);
             MeVersion = v.Major + "." + v.Minor;
         }
 
@@ -44,6 +44,15 @@ namespace MediaEssentials
                     Autofillalttags = "active";
                     break;
                 case "unusedmedia.aspx":
+                    Unusedmedia = "active";
+                    break;
+                case "mediaReferences.aspx":
+                    Unusedmedia = "active";
+                    break;
+                case "mediaupdates.aspx":
+                    Unusedmedia = "active";
+                    break;
+                case "mediasize.aspx":
                     Unusedmedia = "active";
                     break;
             }

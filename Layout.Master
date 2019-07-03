@@ -22,65 +22,80 @@
 <body>
 
 
-<form id="form1" runat="server">
+    <form id="form1" runat="server">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="~/sitecore/admin/mediaessentials/" runat="server">
-                <img src="Assets/imgs/logo.svg" alt="Media Essentials" width="30" height="30" class="me-logo d-inline-block align-top"/>   Media Essentials
-            </a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="~/sitecore/admin/mediaessentials/" runat="server">
+                    <img src="Assets/imgs/logo.svg" alt="Media Essentials" width="30" height="30" class="me-logo d-inline-block align-top" />
+                    Media Essentials
+                </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link <%= Exportmedia %>" runat="server" href="~/sitecore/admin/mediaessentials/ExportMedia.aspx">Export Media</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link <%= Unusedmedia %>" runat="server" href="~/sitecore/admin/mediaessentials/UnusedMedia.aspx">Unused Media</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link <%= Autofillalttags %>" runat="server" href="~/sitecore/admin/mediaessentials/AutoFillAltTags.aspx">Auto-fill Alt Tags</a>
-                    </li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link <%= Exportmedia %>" runat="server" href="~/sitecore/admin/mediaessentials/ExportMedia.aspx">Export Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <%= Unusedmedia %>" runat="server" href="~/sitecore/admin/mediaessentials/UnusedMedia.aspx">Unused Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <%= Autofillalttags %>" runat="server" href="~/sitecore/admin/mediaessentials/AutoFillAltTags.aspx">Auto-fill Alt Tags</a>
+                        </li>
+                                            <li class="nav-item">
+                            <a class="nav-link <%= MediaReferences %>" runat="server" href="~/sitecore/admin/mediaessentials/MediaReferences.aspx">Media References</a>
+                        </li>
+                                            <li class="nav-item">
+                            <a class="nav-link <%= MediaUpdates %>" runat="server" href="~/sitecore/admin/mediaessentials/MediaUpdates.aspx">Media Updates</a>
+                        </li>
+                                            <li class="nav-item">
+                            <a class="nav-link <%= MediaSize %>" runat="server" href="~/sitecore/admin/mediaessentials/MediaSize.aspx">Media Size</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <asp:ContentPlaceHolder ID="main" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+
+
+    <!-- Site footer -->
+    <footer>
+        <div class="row mediaEssentialsFooter">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                        <h2>Media Essentials</h2>
+                        <p><a class="whitelink" href="https://marketplace.sitecore.net/Modules/S/Sitecore_Media_Essentials.aspx?sc_lang=en" target="_blank">https://marketplace.sitecore.net</a></p>
+                        <p>Version:  <%= MeVersion %> </p>
+                    </div>
+                    <div class="col">
+                        <h2>Contact</h2>
+                        <p><a class="whitelink" href="http://www.leonardocunha.net" target="_blank">http://www.leonardocunha.net</a></p>
+                        <p><a class="whitelink" href="https://twitter.com/leositecore" target="_blank">https://twitter.com/leositecore</a></p>
+                        <p><a class="whitelink" href="https://sitecore.stackexchange.com/users/1203/leonardo-cunha" target="_blank">https://sitecore.stackexchange.com/leonardo-cunha</a></p>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
+    </footer>
 
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <asp:ContentPlaceHolder ID="main" runat="server">
-    </asp:ContentPlaceHolder>
-</form>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
-
-<!-- Site footer -->
-<div class="row mediaEssentialsFooter">
-
-    <div class="container">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col">
-                <h2>Media Essentials</h2>
-                <p><a class="whitelink" href="https://marketplace.sitecore.net/Modules/S/Sitecore_Media_Essentials.aspx?sc_lang=en" target="_blank">https://marketplace.sitecore.net</a></p>
-                <p>Version:  <%= MeVersion %> </p>
-            </div>
-            <div class="col">
-                <h2>Contact</h2>
-                <p><a class="whitelink" href="http://www.leonardocunha.net" target="_blank">http://www.leonardocunha.net</a></p>
-                <p><a class="whitelink" href="https://twitter.com/leositecore" target="_blank">https://twitter.com/leositecore</a></p>
-                <p><a class="whitelink" href="https://sitecore.stackexchange.com/users/1203/leonardo-cunha" target="_blank">https://sitecore.stackexchange.com/leonardo-cunha</a></p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- jQuery first then Bootstrap JS. -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<%--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" ></script>--%>
-<script src="Assets/js/bootstrap.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
 </body>
 </html>
