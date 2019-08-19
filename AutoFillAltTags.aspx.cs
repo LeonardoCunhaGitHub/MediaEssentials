@@ -13,23 +13,23 @@ namespace MediaEssentials
 {
     public partial class AutoFillAltTags : System.Web.UI.Page
     {
-        public readonly MediaLibraryUtils MediaLibrary = new MediaLibraryUtils();
+        public readonly MediaLibraryUtils _mediaLibrary = new MediaLibraryUtils();
 
         protected void Page_Load(object sender, EventArgs e)
         {
 
             if (IsPostBack) return;
 
-            MediaLibrary.SetDatabaseDropDown(ddDataBase);
+            _mediaLibrary.SetDatabaseDropDown(ddDataBase);
 
-            MediaLibrary.SetMediaFoldersDropDown(ddMediaFolders, ddDataBase);
+            _mediaLibrary.SetMediaFoldersDropDown(ddMediaFolders, ddDataBase);
 
             chkOnlyEmptyAltTags.Checked = true;
         }
 
         protected void ddDataBase_OnSelectedIndexChanged(object sender, EventArgs e)
         {
-            MediaLibrary.SetMediaFoldersDropDown(ddMediaFolders, ddDataBase);
+            _mediaLibrary.SetMediaFoldersDropDown(ddMediaFolders, ddDataBase);
         }
 
 
@@ -45,7 +45,7 @@ namespace MediaEssentials
 
             var mediaLibrary = db.GetItem(MediaLibraryUtils.MediaLibraryId);
 
-            var allMediaItems = MediaLibrary.GetMediaItems(db, selectedFolder, mediaLibrary,
+            var allMediaItems = _mediaLibrary.GetMediaItems(db, selectedFolder, mediaLibrary,
                 chkIncludeSubFolders.Checked, chkIncludeSystemFolder.Checked);
 
             var output = new StringBuilder();

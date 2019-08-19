@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="Layout.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="MediaEssentialsMVC.MediaEssentials" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="main" runat="server">
@@ -12,21 +13,23 @@
 
 
     <div class="container">
+
+        <!-- first row -->
         <div class="row">
-            <div class="col">
-                <div class="card">
+            <div class="col-md-4">
+                <div class="card mb-5">
                     <div class="card-header">
                         Export Media
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Export Sitecore Media Library and download it as a compressed ZIP file.</p>
+                        <p class="card-text">Export Sitecore Media Library and download it as a ZIP file.</p>
                         <a class="btn btn-outline-primary btn-block" runat="server" href="~/sitecore/admin/mediaessentials/ExportMedia.aspx" role="button">Go &raquo;</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col">
-                <div class="card">
+            <div class="col-md-4">
+                <div class="card mb-5">
                     <div class="card-header">
                         Unused Media
                     </div>
@@ -38,8 +41,8 @@
             </div>
 
 
-            <div class="col">
-                <div class="card">
+            <div class="col-md-4">
+                <div class="card mb-5">
                     <div class="card-header">
                         Auto-fill Alt Tags
                     </div>
@@ -51,8 +54,48 @@
             </div>
 
         </div>
-    </div>
 
+        <!-- second row -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-5">
+                    <div class="card-header">
+                        Media References
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">List all items where each media is referred.</p>
+                        <a class="btn btn-outline-primary btn-block" runat="server" href="~/sitecore/admin/mediaessentials/MediaReferences.aspx" role="button">Go &raquo;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-5">
+                    <div class="card-header">
+                        Media Updates
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">List all media updated before/after specific date.</p>
+                        <a class="btn btn-outline-primary btn-block" runat="server" href="~/sitecore/admin/mediaessentials/MediaUpdates.aspx" role="button">Go &raquo;</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card mb-5">
+                    <div class="card-header">
+                        Media Size
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Identify images larger than specific size.</p>
+                        <a class="btn btn-outline-primary btn-block" runat="server" href="~/sitecore/admin/mediaessentials/MediaSize.aspx" role="button">Go &raquo;</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </asp:Content>
 
 

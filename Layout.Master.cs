@@ -14,6 +14,10 @@ namespace MediaEssentials
         public string Exportmedia = "";
         public string MeVersion = "";
         public string Unusedmedia = "";
+        public string MediaReferences = "";
+        public string MediaUpdates = "";
+        public string MediaSize = "";
+
 
 
         protected void Page_Load(object sender, EventArgs e)
@@ -25,7 +29,7 @@ namespace MediaEssentials
 
             SetActiveNavigation();
             //var v = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
-            var v = new Version(1, 2, 0, 0);
+            var v = new Version(2, 0, 0, 0);
             MeVersion = v.Major + "." + v.Minor;
         }
 
@@ -46,7 +50,17 @@ namespace MediaEssentials
                 case "unusedmedia.aspx":
                     Unusedmedia = "active";
                     break;
-            }
+                case "mediaReferences.aspx":
+                    MediaReferences = "active";
+                    break;
+                case "mediaupdates.aspx":
+                    MediaUpdates = "active";
+                    break;
+                case "mediasize.aspx":
+                    MediaSize = "active";
+                    break;
+
+    }
         }
 
         private object GetPageName()
