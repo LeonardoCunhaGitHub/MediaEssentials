@@ -9,6 +9,45 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <_PublishTargetUrl>C:\src\me\Website\sitecore\admin\MEPublished</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
+    <File Include="Assets/css/bootstrap-grid.css">
+      <publishTime>09/23/2019 10:59:10</publishTime>
+    </File>
+    <File Include="Assets/css/bootstrap-grid.css.map">
+      <publishTime>09/23/2019 10:59:10</publishTime>
+    </File>
+    <File Include="Assets/css/bootstrap-grid.min.css">
+      <publishTime>09/23/2019 10:59:10</publishTime>
+    </File>
+    <File Include="Assets/css/bootstrap-grid.min.css.map">
+      <publishTime>09/23/2019 10:59:10</publishTime>
+    </File>
+    <File Include="Assets/css/bootstrap-reboot.css">
+      <publishTime>09/23/2019 10:59:10</publishTime>
+    </File>
+    <File Include="Assets/css/bootstrap-reboot.css.map">
+      <publishTime>09/23/2019 10:59:10</publishTime>
+    </File>
+    <File Include="Assets/css/bootstrap-reboot.min.css">
+      <publishTime>09/23/2019 10:59:10</publishTime>
+    </File>
+    <File Include="Assets/css/bootstrap-reboot.min.css.map">
+      <publishTime>09/23/2019 10:59:10</publishTime>
+    </File>
+    <File Include="Assets/css/bootstrap.css">
+      <publishTime>09/23/2019 10:59:10</publishTime>
+    </File>
+    <File Include="Assets/css/bootstrap.css.map">
+      <publishTime>09/23/2019 10:59:10</publishTime>
+    </File>
+    <File Include="Assets/css/bootstrap.min.css">
+      <publishTime>09/23/2019 10:59:10</publishTime>
+    </File>
+    <File Include="Assets/css/bootstrap.min.css.map">
+      <publishTime>09/23/2019 10:59:10</publishTime>
+    </File>
+    <File Include="Assets/css/MediaEssentialsCustom.css">
+      <publishTime>09/23/2019 10:59:10</publishTime>
+    </File>
     <File Include="Assets/imgs/logo.svg">
       <publishTime>08/19/2019 10:20:20</publishTime>
     </File>
@@ -21,8 +60,35 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="AutoFillAltTags.aspx">
       <publishTime>08/19/2019 10:20:20</publishTime>
     </File>
+    <File Include="bin/AutoFillAltTags.aspx">
+      <publishTime>04/12/2018 13:30:30</publishTime>
+    </File>
+    <File Include="bin/AutoFillAltTags.aspx.cs">
+      <publishTime>06/14/2018 15:58:44</publishTime>
+    </File>
+    <File Include="bin/AutoFillAltTags.aspx.designer.cs">
+      <publishTime>04/12/2018 13:30:30</publishTime>
+    </File>
     <File Include="bin/ComponentArt.Web.UI.dll">
       <publishTime>08/19/2019 09:52:55</publishTime>
+    </File>
+    <File Include="bin/default.aspx">
+      <publishTime>06/14/2018 14:18:56</publishTime>
+    </File>
+    <File Include="bin/default.aspx.cs">
+      <publishTime>04/03/2018 13:49:52</publishTime>
+    </File>
+    <File Include="bin/default.aspx.designer.cs">
+      <publishTime>04/03/2018 13:49:53</publishTime>
+    </File>
+    <File Include="bin/ExportMedia.aspx">
+      <publishTime>04/12/2018 13:30:38</publishTime>
+    </File>
+    <File Include="bin/ExportMedia.aspx.cs">
+      <publishTime>09/23/2019 13:06:38</publishTime>
+    </File>
+    <File Include="bin/ExportMedia.aspx.designer.cs">
+      <publishTime>04/12/2018 13:30:38</publishTime>
     </File>
     <File Include="bin/HtmlAgilityPack.dll">
       <publishTime>08/19/2019 09:52:55</publishTime>
@@ -33,6 +99,15 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/ITHit.WebDAV.Server.dll">
       <publishTime>08/19/2019 09:52:55</publishTime>
     </File>
+    <File Include="bin/Layout.Master">
+      <publishTime>08/19/2019 14:31:21</publishTime>
+    </File>
+    <File Include="bin/Layout.Master.cs">
+      <publishTime>08/19/2019 13:55:08</publishTime>
+    </File>
+    <File Include="bin/Layout.Master.designer.cs">
+      <publishTime>04/03/2018 17:18:28</publishTime>
+    </File>
     <File Include="bin/Lucene.Net.dll">
       <publishTime>08/19/2019 09:52:55</publishTime>
     </File>
@@ -40,10 +115,37 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/19/2019 09:52:55</publishTime>
     </File>
     <File Include="bin/MediaEssentials.dll">
-      <publishTime>08/19/2019 11:36:34</publishTime>
+      <publishTime>10/16/2019 11:53:03</publishTime>
     </File>
     <File Include="bin/MediaEssentials.pdb">
-      <publishTime>08/19/2019 11:36:34</publishTime>
+      <publishTime>10/16/2019 11:53:03</publishTime>
+    </File>
+    <File Include="bin/MediaReferences.aspx">
+      <publishTime>06/14/2018 17:10:09</publishTime>
+    </File>
+    <File Include="bin/MediaReferences.aspx.cs">
+      <publishTime>06/14/2018 17:08:13</publishTime>
+    </File>
+    <File Include="bin/MediaReferences.aspx.designer.cs">
+      <publishTime>06/14/2018 14:46:46</publishTime>
+    </File>
+    <File Include="bin/MediaSize.aspx">
+      <publishTime>10/16/2019 11:49:20</publishTime>
+    </File>
+    <File Include="bin/MediaSize.aspx.cs">
+      <publishTime>10/16/2019 11:44:04</publishTime>
+    </File>
+    <File Include="bin/MediaSize.aspx.designer.cs">
+      <publishTime>10/16/2019 11:43:40</publishTime>
+    </File>
+    <File Include="bin/MediaUpdates.aspx">
+      <publishTime>06/14/2018 17:10:09</publishTime>
+    </File>
+    <File Include="bin/MediaUpdates.aspx.cs">
+      <publishTime>06/14/2018 17:08:13</publishTime>
+    </File>
+    <File Include="bin/MediaUpdates.aspx.designer.cs">
+      <publishTime>06/14/2018 14:46:24</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll">
       <publishTime>08/19/2019 09:52:56</publishTime>
@@ -108,8 +210,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/Telerik.Web.UI.dll">
       <publishTime>08/19/2019 09:53:01</publishTime>
     </File>
+    <File Include="bin/UnusedMedia.aspx">
+      <publishTime>06/14/2018 16:33:34</publishTime>
+    </File>
+    <File Include="bin/UnusedMedia.aspx.cs">
+      <publishTime>04/12/2018 13:30:30</publishTime>
+    </File>
+    <File Include="bin/UnusedMedia.aspx.designer.cs">
+      <publishTime>04/12/2018 13:30:30</publishTime>
+    </File>
     <File Include="default.aspx">
-      <publishTime>08/19/2019 10:20:20</publishTime>
+      <publishTime>06/14/2018 14:18:56</publishTime>
     </File>
     <File Include="ExportMedia.aspx">
       <publishTime>08/19/2019 10:20:20</publishTime>
@@ -118,7 +229,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/19/2019 10:20:20</publishTime>
     </File>
     <File Include="Layout.Master">
-      <publishTime>08/19/2019 10:20:20</publishTime>
+      <publishTime>08/19/2019 14:31:21</publishTime>
+    </File>
+    <File Include="MediaReferences.aspx">
+      <publishTime>06/14/2018 17:10:09</publishTime>
+    </File>
+    <File Include="MediaSize.aspx">
+      <publishTime>10/16/2019 11:49:20</publishTime>
+    </File>
+    <File Include="MediaUpdates.aspx">
+      <publishTime>06/14/2018 17:10:09</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.js">
       <publishTime>08/19/2019 10:20:20</publishTime>

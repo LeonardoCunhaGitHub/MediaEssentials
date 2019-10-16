@@ -5,9 +5,8 @@
       <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-3">Export Media</h1>
-            <p class="lead">This module is going to export the selected folder to a zip file.</p>
-            <p class="lead">Additionaly, this file will be stored inside the DATA folder so you can download it at any time.</p>
+            <h1 class="display-3">Media Size</h1>
+            <p class="lead">This module is going to identify media items based on its size.</p>
         </div>
     </div>
     
@@ -59,9 +58,9 @@
                                 <div class="row">
                                     <div class="form-group col-lg-12">
                                     
-                                        <asp:LinkButton ID="btnExport" runat="server" CssClass="btn btn-outline-primary" OnClick="btnExport_Click" >Export Media</asp:LinkButton>
+                                        <asp:LinkButton ID="btnFilterMediaBySize" runat="server" CssClass="btn btn-outline-primary" OnClick="btnFilterMediaBySize_OnClick" >Find Media</asp:LinkButton>
 
-                                        <asp:LinkButton ID="btnDownload" runat="server" CssClass="btn btn-link" OnClick="btnDownload_Click" >Download Zip File</asp:LinkButton>
+                                        <asp:LinkButton ID="btnDownload" runat="server" CssClass="btn btn-link" OnClick="btnDownload_OnClick" >Download Zip File</asp:LinkButton>
 
                                     
                                     

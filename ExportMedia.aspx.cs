@@ -25,7 +25,7 @@ namespace MediaEssentials
         protected void Page_Load(object sender, EventArgs e)
         {
             var scriptManager = ScriptManager.GetCurrent(Page);
-            if (scriptManager != null) scriptManager.RegisterPostBackControl(btnDownload);
+            scriptManager?.RegisterPostBackControl(btnDownload);
 
             if (IsPostBack) return;
 
