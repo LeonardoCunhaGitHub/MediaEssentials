@@ -45,13 +45,13 @@
                         <li class="nav-item">
                             <a class="nav-link <%= Autofillalttags %>" runat="server" href="~/sitecore/admin/mediaessentials/AutoFillAltTags.aspx">Auto-fill Alt Tags</a>
                         </li>
-                                            <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link <%= MediaReferences %>" runat="server" href="~/sitecore/admin/mediaessentials/MediaReferences.aspx">Media References</a>
                         </li>
-                                            <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link <%= MediaUpdates %>" runat="server" href="~/sitecore/admin/mediaessentials/MediaUpdates.aspx">Media Updates</a>
                         </li>
-                                            <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link <%= MediaSize %>" runat="server" href="~/sitecore/admin/mediaessentials/MediaSize.aspx">Media Size</a>
                         </li>
                     </ul>
