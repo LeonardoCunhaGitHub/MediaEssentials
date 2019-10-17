@@ -14,6 +14,7 @@ using Sitecore.Diagnostics;
 using Sitecore.Mvc.Extensions;
 using Sitecore.Resources.Media;
 using Sitecore.Zip;
+using Convert = Sitecore.Convert;
 
 namespace MediaEssentials
 {
@@ -35,6 +36,9 @@ namespace MediaEssentials
 
             _mediaLibrary.SetMediaFoldersDropDown(ddMediaFolders, ddDataBase);
 
+
+            _mediaLibrary.SetMediaSizesToDropDown(ddMediaSizes);
+
             btnDownload.Visible = false;
 
         }
@@ -45,7 +49,6 @@ namespace MediaEssentials
         }
 
 
-  
         protected void btnDownload_OnClick(object sender, EventArgs e)
         {
             if (Session["filePath"] == null || (string)Session["filePath"] == "") return;
@@ -102,6 +105,9 @@ namespace MediaEssentials
             };
             //                                           "doc", "docx", "pdf", "xls", "xlsx"
 
+            var sizeLogic = System.Convert.ToInt16(rbSizeLogic.SelectedValue);
+            var sizeToFilter = System.Convert.ToInt64(ddMediaSizes.SelectedValue);
+
             var totalMediaIdentified = 0;
             foreach (var m in allMediaItems)
             {
@@ -114,24 +120,35 @@ namespace MediaEssentials
 
                 if (match != null) continue;
 
-                //loop all items and export them to a csv file 
-
+                //loop all items and check its size
                 foreach (var l in installedLanguages)
                 {
+                    var add = false;
                     var item = db.GetItem(m.ID, l);
                     var mediaData = new MediaData(item);
                     //---------------------------------------------------------------------------
 
-                    var size = (double)mediaData.MediaItem.Size / 1024 / 1024;
-                   
+                    var size = mediaData.MediaItem.Size;
 
-                   
+                    if (sizeLogic == 0)
+                    {
+                        add = (size >= sizeToFilter);
+
+                    }
+                    else
+                    {
+                        add = (size <= sizeToFilter);
+
+                    }
+
+                    if (!add) continue;
+
                     output.AppendLine("---- Item ----");
                     output.AppendLine("Name: " + item.Name);
                     output.AppendLine("ID: " + item.ID);
                     output.AppendLine("Path: " + item.Paths.Path);
                     output.AppendLine("Language: " + l.Name);
-                    output.AppendLine("Size: " + size.ToString("##.#"));
+                    output.AppendLine("Size: [" + size + " bytes] [" + (double)(size / 1000.00) + " Kb] [" + (float)(size / 1000000.00) + " Mb]");
                     output.AppendLine();
 
                     totalMediaIdentified++;
@@ -143,6 +160,9 @@ namespace MediaEssentials
             if (totalMediaIdentified == 0)
             {
                 output.AppendLine("No media items found within the options set.");
+
+                //output of last execution
+                lbOutput.Text = output.ToString().Replace(Environment.NewLine, "<br />");
 
                 return;
             }
@@ -158,6 +178,6 @@ namespace MediaEssentials
         }
 
 
-     
+
     }
 }

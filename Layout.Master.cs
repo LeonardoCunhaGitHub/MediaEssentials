@@ -9,11 +9,11 @@ namespace MediaEssentials
 {
     public partial class Layout : MasterPage
     {
-        public string Autofillalttags = "";
+        public string AutoFillAltTags = "";
         public string Editalttags = "";
-        public string Exportmedia = "";
+        public string ExportMedia = "";
         public string MeVersion = "";
-        public string Unusedmedia = "";
+        public string UnusedMedia = "";
         public string MediaReferences = "";
         public string MediaUpdates = "";
         public string MediaSize = "";
@@ -42,13 +42,13 @@ namespace MediaEssentials
             switch (pagename)
             {
                 case "exportmedia.aspx":
-                    Exportmedia = "active";
+                    ExportMedia = "active";
                     break;
                 case "autofillalttags.aspx":
-                    Autofillalttags = "active";
+                    AutoFillAltTags = "active";
                     break;
                 case "unusedmedia.aspx":
-                    Unusedmedia = "active";
+                    UnusedMedia = "active";
                     break;
                 case "mediaReferences.aspx":
                     MediaReferences = "active";

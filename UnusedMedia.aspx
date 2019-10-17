@@ -19,7 +19,7 @@
                     <div class="form-group col-lg-6 ">
                         <div class="card">
                             <div class="card-header">
-                                Unused Media
+                                Filter Options
                             </div>
                             <div class="card-body">
                                 <div class="row">

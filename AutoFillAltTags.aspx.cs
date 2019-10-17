@@ -126,6 +126,9 @@ namespace MediaEssentials
             {
                 output.AppendLine("No media ALT tag to be updated within the options set.");
 
+                //output of last execution
+                lbOutput.Text = output.ToString().Replace(Environment.NewLine, "<br />");
+
                 return;
             }
 

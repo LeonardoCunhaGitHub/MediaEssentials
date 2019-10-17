@@ -37,13 +37,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link <%= Exportmedia %>" runat="server" href="~/sitecore/admin/mediaessentials/ExportMedia.aspx">Export Media</a>
+                            <a class="nav-link <%= ExportMedia %>" runat="server" href="~/sitecore/admin/mediaessentials/ExportMedia.aspx">Export Media</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <%= Unusedmedia %>" runat="server" href="~/sitecore/admin/mediaessentials/UnusedMedia.aspx">Unused Media</a>
+                            <a class="nav-link <%= UnusedMedia %>" runat="server" href="~/sitecore/admin/mediaessentials/UnusedMedia.aspx">Unused Media</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <%= Autofillalttags %>" runat="server" href="~/sitecore/admin/mediaessentials/AutoFillAltTags.aspx">Auto-fill Alt Tags</a>
+                            <a class="nav-link <%= AutoFillAltTags %>" runat="server" href="~/sitecore/admin/mediaessentials/AutoFillAltTags.aspx">Auto-fill Alt Tags</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <%= MediaReferences %>" runat="server" href="~/sitecore/admin/mediaessentials/MediaReferences.aspx">Media References</a>
