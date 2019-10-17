@@ -8,7 +8,7 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-3">Export Media</h1>
-            <p class="lead">This module is going to export the selected folder to a zip file.</p>
+            <p class="lead">This module exports the selected folder to a zip file.</p>
             <p class="lead">Additionaly, this file will be stored inside the DATA folder so you can download it at any time.</p>
         </div>
     </div>

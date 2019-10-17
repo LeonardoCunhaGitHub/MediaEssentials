@@ -6,7 +6,7 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-3">Unused Media</h1>
-            <p class="lead">This module is going to identify all unused media and give you the option to move all to recycle bin or delete them.</p>
+            <p class="lead">This module identifies all unused media and give you the option to move all to recycle bin or delete them.</p>
         </div>
     </div>
     

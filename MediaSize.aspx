@@ -7,7 +7,7 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-3">Media Size</h1>
-            <p class="lead">This module is going to identify media items based on its size.</p>
+            <p class="lead">This module identifies media items based on its size.</p>
         </div>
     </div>
     
