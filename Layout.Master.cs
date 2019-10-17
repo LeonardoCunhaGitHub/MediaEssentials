@@ -17,8 +17,8 @@ namespace MediaEssentials
         public string MediaUpdates = "";
         public string MediaSize = "";
 
-        public string MediaEssentialsURL =  @"http://" +
-            HttpContext.Current.Request.Url.Host + @"/sitecore/admin/mediaessentials";
+        public string MediaEssentialsURL =  "http://" +
+            HttpContext.Current.Request.Url.Host + @"/sitecore/admin/mediaessentials/default.aspx";
 
 
 
@@ -26,10 +26,13 @@ namespace MediaEssentials
         {
             //This condition allows only Administrator to access this page.
             if (!Sitecore.Context.User.IsAdministrator)
-                Response.Redirect(MediaEssentialsURL);
+                Response.Redirect("http://" + HttpContext.Current.Request.Url.Host +
+                                  "/sitecore/login?returnUrl=%2fsitecore%2fadmin%2fmediaessentials%2f");
+
 
             SetActiveNavigation();
-          
+
+            lnkDashboard.NavigateUrl = MediaEssentialsURL;
 
             //var v = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
             var v = new Version(2, 0, 0, 0);
