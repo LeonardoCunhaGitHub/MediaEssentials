@@ -76,22 +76,22 @@ namespace MediaEssentials {
         protected global::System.Web.UI.WebControls.CheckBox chkIncludeSubFolders;
         
         /// <summary>
-        /// btnExport control.
+        /// calAfterDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnExport;
+        protected global::System.Web.UI.WebControls.Calendar calAfterDate;
         
         /// <summary>
-        /// btnDownload control.
+        /// btnFindMedia control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnDownload;
+        protected global::System.Web.UI.WebControls.LinkButton btnFindMedia;
         
         /// <summary>
         /// lbOutput control.

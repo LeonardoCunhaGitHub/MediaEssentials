@@ -1,27 +1,28 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="Layout.Master" AutoEventWireup="true" CodeBehind="MediaUpdates.aspx.cs" Inherits="MediaEssentials.MediaUpdates" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="Layout.Master" AutoEventWireup="true" CodeBehind="MediaDateUploaded.aspx.cs" Inherits="MediaEssentials.MediaUpdates" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="main" runat="server">
-      <!-- Jumbotron -->
+    <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-3">Export Media</h1>
-            <p class="lead">This module is going to export the selected folder to a zip file.</p>
-            <p class="lead">Additionaly, this file will be stored inside the DATA folder so you can download it at any time.</p>
+            <h1 class="display-3">Media Date Uploaded</h1>
+            <p class="lead">This module is going to identify which media was uploaded after a specific date.</p>
         </div>
     </div>
-    
+
     <%--breadcrumb--%>
     <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><asp:HyperLink ID="lnkDashboard" runat="server">Dashboard</asp:HyperLink></li>
+                <li class="breadcrumb-item">
+                    <asp:HyperLink ID="lnkDashboard" runat="server">Dashboard</asp:HyperLink></li>
                 <li class="breadcrumb-item active" aria-current="page">Media Updates</li>
             </ol>
         </nav>
     </div>
-    
-    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true" ></asp:ScriptManager>
+
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true"></asp:ScriptManager>
     <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Always">
         <ContentTemplate>
 
@@ -41,7 +42,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-lg-12">
-                                        <label  for="ddMediaFolders" class="col-form-label">Which media folder do you want to export?</label>
+                                        <label for="ddMediaFolders" class="col-form-label">Which media folder do you want to export?</label>
                                         <asp:DropDownList ID="ddMediaFolders" runat="server" CssClass="form-control" AutoPostBack="false"></asp:DropDownList>
                                     </div>
                                 </div>
@@ -66,15 +67,29 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="row">
                                     <div class="form-group col-lg-12">
-                                    
-                                        <asp:LinkButton ID="btnExport" runat="server" CssClass="btn btn-outline-primary" OnClick="btnExport_Click" >Export Media</asp:LinkButton>
+                                        <div class="alert alert-warning" role="alert">
+                                            After selected Date (inclusive)
+                                        </div>
+                                        <div class="form-check">
+                                            <label>
+                                                <asp:Calendar ID="calAfterDate" runat="server" ></asp:Calendar>
 
-                                        <asp:LinkButton ID="btnDownload" runat="server" CssClass="btn btn-link" OnClick="btnDownload_Click" >Download Zip File</asp:LinkButton>
+                                           
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                    
-                                    
+
+                                <div class="row">
+                                    <div class="form-group col-lg-12">
+
+                                        <asp:LinkButton ID="btnFindMedia" runat="server" CssClass="btn btn-outline-primary" OnClick="btnFindMedia_OnClick">Find Media</asp:LinkButton>
+
+
                                     </div>
                                 </div>
                             </div>

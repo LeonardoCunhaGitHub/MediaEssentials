@@ -100,10 +100,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/19/2019 10:52:55</publishTime>
     </File>
     <File Include="bin/Layout.Master">
-      <publishTime>10/17/2019 14:25:44</publishTime>
+      <publishTime>10/17/2019 19:04:25</publishTime>
     </File>
     <File Include="bin/Layout.Master.cs">
-      <publishTime>10/17/2019 14:25:44</publishTime>
+      <publishTime>10/17/2019 18:25:38</publishTime>
     </File>
     <File Include="bin/Layout.Master.designer.cs">
       <publishTime>10/17/2019 14:25:44</publishTime>
@@ -114,11 +114,20 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/Lucene.Net.pdb">
       <publishTime>08/19/2019 10:52:55</publishTime>
     </File>
+    <File Include="bin/MediaDateUploaded.aspx">
+      <publishTime>10/17/2019 18:25:38</publishTime>
+    </File>
+    <File Include="bin/MediaDateUploaded.aspx.cs">
+      <publishTime>10/17/2019 18:20:08</publishTime>
+    </File>
+    <File Include="bin/MediaDateUploaded.aspx.designer.cs">
+      <publishTime>10/17/2019 17:32:18</publishTime>
+    </File>
     <File Include="bin/MediaEssentials.dll">
-      <publishTime>10/17/2019 15:34:22</publishTime>
+      <publishTime>10/17/2019 19:04:32</publishTime>
     </File>
     <File Include="bin/MediaEssentials.pdb">
-      <publishTime>10/17/2019 15:34:22</publishTime>
+      <publishTime>10/17/2019 19:04:32</publishTime>
     </File>
     <File Include="bin/MediaReferences.aspx">
       <publishTime>10/17/2019 14:25:44</publishTime>
@@ -133,19 +142,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/17/2019 15:26:01</publishTime>
     </File>
     <File Include="bin/MediaSize.aspx.cs">
-      <publishTime>10/17/2019 15:32:29</publishTime>
+      <publishTime>10/17/2019 16:41:53</publishTime>
     </File>
     <File Include="bin/MediaSize.aspx.designer.cs">
       <publishTime>10/17/2019 14:25:44</publishTime>
     </File>
     <File Include="bin/MediaUpdates.aspx">
-      <publishTime>10/17/2019 12:34:44</publishTime>
+      <publishTime>10/17/2019 17:32:18</publishTime>
     </File>
     <File Include="bin/MediaUpdates.aspx.cs">
-      <publishTime>10/17/2019 14:25:44</publishTime>
+      <publishTime>10/17/2019 18:20:08</publishTime>
     </File>
     <File Include="bin/MediaUpdates.aspx.designer.cs">
-      <publishTime>10/17/2019 12:34:44</publishTime>
+      <publishTime>10/17/2019 17:32:18</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll">
       <publishTime>08/19/2019 10:52:56</publishTime>
@@ -220,7 +229,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/17/2019 14:25:44</publishTime>
     </File>
     <File Include="default.aspx">
-      <publishTime>06/14/2018 14:18:56</publishTime>
+      <publishTime>10/17/2019 19:06:53</publishTime>
     </File>
     <File Include="ExportMedia.aspx">
       <publishTime>10/17/2019 14:34:03</publishTime>
@@ -229,7 +238,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/19/2019 11:20:20</publishTime>
     </File>
     <File Include="Layout.Master">
-      <publishTime>10/17/2019 14:25:44</publishTime>
+      <publishTime>10/17/2019 19:04:25</publishTime>
+    </File>
+    <File Include="MediaDateUploaded.aspx">
+      <publishTime>10/17/2019 18:25:38</publishTime>
     </File>
     <File Include="MediaReferences.aspx">
       <publishTime>10/17/2019 14:25:44</publishTime>
@@ -238,7 +250,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/17/2019 15:26:01</publishTime>
     </File>
     <File Include="MediaUpdates.aspx">
-      <publishTime>10/17/2019 12:34:44</publishTime>
+      <publishTime>10/17/2019 17:32:18</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.js">
       <publishTime>08/19/2019 11:20:20</publishTime>
@@ -265,7 +277,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/17/2019 14:35:00</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>08/19/2019 12:36:35</publishTime>
+      <publishTime>10/17/2019 19:04:54</publishTime>
     </File>
   </ItemGroup>
 </Project>

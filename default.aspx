@@ -72,11 +72,11 @@
             <div class="col-md-4">
                 <div class="card mb-5">
                     <div class="card-header">
-                        Media Updates
+                        Media Date Uploaded
                     </div>
                     <div class="card-body">
-                        <p class="card-text">List all media updated before/after specific date.</p>
-                        <a class="btn btn-outline-primary btn-block" runat="server" href="~/sitecore/admin/mediaessentials/MediaUpdates.aspx" role="button">Go &raquo;</a>
+                        <p class="card-text">List all media uploaded after specific date.</p>
+                        <a class="btn btn-outline-primary btn-block" runat="server" href="~/sitecore/admin/mediaessentials/MediaDateUploaded.aspx" role="button">Go &raquo;</a>
                     </div>
                 </div>
             </div>

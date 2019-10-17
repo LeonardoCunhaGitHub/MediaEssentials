@@ -50,7 +50,7 @@
                             <a class="nav-link <%= MediaReferences %>" runat="server" href="~/sitecore/admin/mediaessentials/MediaReferences.aspx">Media References</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <%= MediaUpdates %>" runat="server" href="~/sitecore/admin/mediaessentials/MediaUpdates.aspx">Media Updates</a>
+                            <a class="nav-link <%= MediaDateUploaded %>" runat="server" href="~/sitecore/admin/mediaessentials/MediaDateUploaded.aspx">Media Date Uploaded</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <%= MediaSize %>" runat="server" href="~/sitecore/admin/mediaessentials/MediaSize.aspx">Media Size</a>

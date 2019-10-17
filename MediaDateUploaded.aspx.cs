@@ -8,48 +8,26 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Sitecore;
 using Sitecore.Data;
-using Sitecore.Data.Items;
 using Sitecore.Data.Managers;
-using Sitecore.Diagnostics;
-using Sitecore.Mvc.Extensions;
 using Sitecore.Resources.Media;
-using Sitecore.Zip;
-using Convert = Sitecore.Convert;
 
 namespace MediaEssentials
 {
-    public partial class MediaSize : System.Web.UI.Page
+    public partial class MediaUpdates : System.Web.UI.Page
     {
-
         private readonly MediaLibraryUtils _mediaLibrary = new MediaLibraryUtils();
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            var scriptManager = ScriptManager.GetCurrent(Page);
-            scriptManager?.RegisterPostBackControl(btnDownload);
-
             if (IsPostBack) return;
-
-            Session.Clear();
 
             lnkDashboard.NavigateUrl = ((Layout)this.Master)?.MediaEssentialsURL;
 
-            //add class to the items of the radio button
-            foreach (ListItem item in rbSizeLogic.Items)
-            {
-                item.Attributes.Add("class", "form-check-label");
-               
-            }
+            calAfterDate.SelectedDate = DateTime.Today;
 
             _mediaLibrary.SetDatabaseDropDown(ddDataBase);
 
             _mediaLibrary.SetMediaFoldersDropDown(ddMediaFolders, ddDataBase);
-
-
-            _mediaLibrary.SetMediaSizesToDropDown(ddMediaSizes);
-
-            btnDownload.Visible = false;
-
         }
 
         protected void ddDataBase_OnSelectedIndexChanged(object sender, EventArgs e)
@@ -58,23 +36,7 @@ namespace MediaEssentials
         }
 
 
-        protected void btnDownload_OnClick(object sender, EventArgs e)
-        {
-            if (Session["filePath"] == null || (string)Session["filePath"] == "") return;
-
-            var f = (string)Session["exportFileNameWithExtension"];
-            var p = (string)Session["filePath"];
-
-
-            Response.Clear();
-            Response.AppendHeader("content-disposition",
-                "attachment; filename=\"" + f + "\""); //firefox has issue with filenames with SPACE so use this sintaxe
-            Response.ContentType = "application/zip";
-            Response.TransmitFile(p);
-            Response.End();
-        }
-
-        protected void btnFilterMediaBySize_OnClick(object sender, EventArgs e)
+        protected void btnFindMedia_OnClick(object sender, EventArgs e)
         {
             //get selected folder
             var itemId = new ID(ddMediaFolders.SelectedValue);
@@ -114,8 +76,8 @@ namespace MediaEssentials
             };
             //                                           "doc", "docx", "pdf", "xls", "xlsx"
 
-            var sizeLogic = System.Convert.ToInt16(rbSizeLogic.SelectedValue);
-            var sizeToFilter = System.Convert.ToInt64(ddMediaSizes.SelectedValue);
+            var selectedDate = calAfterDate.SelectedDate;
+
 
             var totalMediaIdentified = 0;
             foreach (var m in allMediaItems)
@@ -137,18 +99,10 @@ namespace MediaEssentials
                     var mediaData = new MediaData(item);
 
 
-                    var size = mediaData.MediaItem.Size;
+                    var imgUploadedDate = mediaData.MediaItem.InnerItem.Statistics.Updated;
 
-                    if (sizeLogic == 0)
-                    {
-                        add = (size >= sizeToFilter);
-
-                    }
-                    else
-                    {
-                        add = (size <= sizeToFilter);
-
-                    }
+                    add = (imgUploadedDate.Date >= selectedDate.Date);
+                    
 
                     if (!add) continue;
 
@@ -157,7 +111,7 @@ namespace MediaEssentials
                     output.AppendLine("ID: " + item.ID);
                     output.AppendLine("Path: " + item.Paths.Path);
                     output.AppendLine("Language: " + l.Name);
-                    output.AppendLine("Size: [" + size + " bytes] [" + (double)(size / 1000.00) + " Kb] [" + (float)(size / 1000000.00) + " Mb]");
+                    output.AppendLine("Uploaded Date: " + imgUploadedDate.Month + "/" + imgUploadedDate.Day + "/" + imgUploadedDate.Year);
                     output.AppendLine();
 
                     totalMediaIdentified++;
@@ -185,8 +139,5 @@ namespace MediaEssentials
             lbOutput.Text = output.ToString().Replace(Environment.NewLine, "<br />");
 
         }
-
-
-
     }
 }

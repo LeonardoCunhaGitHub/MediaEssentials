@@ -100,7 +100,7 @@
     <Content Include="MediaReferences.aspx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="MediaUpdates.aspx">
+    <Content Include="MediaDateUploaded.aspx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="MediaSize.aspx">
@@ -191,13 +191,13 @@
       <DependentUpon>MediaReferences.aspx</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="MediaUpdates.aspx.cs">
-      <DependentUpon>MediaUpdates.aspx</DependentUpon>
+    <Compile Include="MediaDateUploaded.aspx.cs">
+      <DependentUpon>MediaDateUploaded.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="MediaUpdates.aspx.designer.cs">
-      <DependentUpon>MediaUpdates.aspx</DependentUpon>
+    <Compile Include="MediaDateUploaded.aspx.designer.cs">
+      <DependentUpon>MediaDateUploaded.aspx</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="MediaSize.aspx.cs">
