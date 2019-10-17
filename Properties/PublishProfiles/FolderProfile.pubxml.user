@@ -6,71 +6,71 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\src\me\Website\sitecore\admin\MEPublished</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\src\me\Website\sitecore\admin\MediaEssentials</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="Assets/css/bootstrap-grid.css">
-      <publishTime>09/23/2019 10:59:10</publishTime>
+      <publishTime>10/16/2019 13:32:10</publishTime>
     </File>
     <File Include="Assets/css/bootstrap-grid.css.map">
-      <publishTime>09/23/2019 10:59:10</publishTime>
+      <publishTime>10/16/2019 13:32:10</publishTime>
     </File>
     <File Include="Assets/css/bootstrap-grid.min.css">
-      <publishTime>09/23/2019 10:59:10</publishTime>
+      <publishTime>10/16/2019 13:32:10</publishTime>
     </File>
     <File Include="Assets/css/bootstrap-grid.min.css.map">
-      <publishTime>09/23/2019 10:59:10</publishTime>
+      <publishTime>10/16/2019 13:32:10</publishTime>
     </File>
     <File Include="Assets/css/bootstrap-reboot.css">
-      <publishTime>09/23/2019 10:59:10</publishTime>
+      <publishTime>10/16/2019 13:32:10</publishTime>
     </File>
     <File Include="Assets/css/bootstrap-reboot.css.map">
-      <publishTime>09/23/2019 10:59:10</publishTime>
+      <publishTime>10/16/2019 13:32:10</publishTime>
     </File>
     <File Include="Assets/css/bootstrap-reboot.min.css">
-      <publishTime>09/23/2019 10:59:10</publishTime>
+      <publishTime>10/16/2019 13:32:10</publishTime>
     </File>
     <File Include="Assets/css/bootstrap-reboot.min.css.map">
-      <publishTime>09/23/2019 10:59:10</publishTime>
+      <publishTime>10/16/2019 13:32:10</publishTime>
     </File>
     <File Include="Assets/css/bootstrap.css">
-      <publishTime>09/23/2019 10:59:10</publishTime>
+      <publishTime>10/17/2019 13:12:00</publishTime>
     </File>
     <File Include="Assets/css/bootstrap.css.map">
-      <publishTime>09/23/2019 10:59:10</publishTime>
+      <publishTime>10/16/2019 13:32:10</publishTime>
     </File>
     <File Include="Assets/css/bootstrap.min.css">
-      <publishTime>09/23/2019 10:59:10</publishTime>
+      <publishTime>10/17/2019 13:12:24</publishTime>
     </File>
     <File Include="Assets/css/bootstrap.min.css.map">
-      <publishTime>09/23/2019 10:59:10</publishTime>
+      <publishTime>10/16/2019 13:32:10</publishTime>
     </File>
     <File Include="Assets/css/MediaEssentialsCustom.css">
-      <publishTime>09/23/2019 10:59:10</publishTime>
+      <publishTime>10/16/2019 13:32:10</publishTime>
     </File>
     <File Include="Assets/imgs/logo.svg">
-      <publishTime>08/19/2019 10:20:20</publishTime>
+      <publishTime>08/19/2019 11:20:20</publishTime>
     </File>
     <File Include="Assets/js/bootstrap.js">
-      <publishTime>08/19/2019 10:20:20</publishTime>
+      <publishTime>08/19/2019 11:20:20</publishTime>
     </File>
     <File Include="Assets/js/bootstrap.min.js">
-      <publishTime>08/19/2019 10:20:20</publishTime>
+      <publishTime>08/19/2019 11:20:20</publishTime>
     </File>
     <File Include="AutoFillAltTags.aspx">
-      <publishTime>08/19/2019 10:20:20</publishTime>
+      <publishTime>10/17/2019 13:12:25</publishTime>
     </File>
     <File Include="bin/AutoFillAltTags.aspx">
-      <publishTime>04/12/2018 13:30:30</publishTime>
+      <publishTime>10/17/2019 13:12:25</publishTime>
     </File>
     <File Include="bin/AutoFillAltTags.aspx.cs">
-      <publishTime>06/14/2018 15:58:44</publishTime>
+      <publishTime>10/17/2019 12:36:16</publishTime>
     </File>
     <File Include="bin/AutoFillAltTags.aspx.designer.cs">
-      <publishTime>04/12/2018 13:30:30</publishTime>
+      <publishTime>10/17/2019 12:33:36</publishTime>
     </File>
     <File Include="bin/ComponentArt.Web.UI.dll">
-      <publishTime>08/19/2019 09:52:55</publishTime>
+      <publishTime>08/19/2019 10:52:55</publishTime>
     </File>
     <File Include="bin/default.aspx">
       <publishTime>06/14/2018 14:18:56</publishTime>
@@ -82,190 +82,190 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/03/2018 13:49:53</publishTime>
     </File>
     <File Include="bin/ExportMedia.aspx">
-      <publishTime>04/12/2018 13:30:38</publishTime>
+      <publishTime>10/17/2019 12:33:41</publishTime>
     </File>
     <File Include="bin/ExportMedia.aspx.cs">
-      <publishTime>09/23/2019 13:06:38</publishTime>
+      <publishTime>10/17/2019 12:35:21</publishTime>
     </File>
     <File Include="bin/ExportMedia.aspx.designer.cs">
-      <publishTime>04/12/2018 13:30:38</publishTime>
+      <publishTime>10/17/2019 11:58:20</publishTime>
     </File>
     <File Include="bin/HtmlAgilityPack.dll">
-      <publishTime>08/19/2019 09:52:55</publishTime>
+      <publishTime>08/19/2019 10:52:55</publishTime>
     </File>
     <File Include="bin/HtmlAgilityPack.pdb">
-      <publishTime>08/19/2019 09:52:55</publishTime>
+      <publishTime>08/19/2019 10:52:55</publishTime>
     </File>
     <File Include="bin/ITHit.WebDAV.Server.dll">
-      <publishTime>08/19/2019 09:52:55</publishTime>
+      <publishTime>08/19/2019 10:52:55</publishTime>
     </File>
     <File Include="bin/Layout.Master">
-      <publishTime>08/19/2019 14:31:21</publishTime>
+      <publishTime>10/17/2019 13:35:33</publishTime>
     </File>
     <File Include="bin/Layout.Master.cs">
-      <publishTime>08/19/2019 13:55:08</publishTime>
+      <publishTime>10/17/2019 13:47:07</publishTime>
     </File>
     <File Include="bin/Layout.Master.designer.cs">
-      <publishTime>04/03/2018 17:18:28</publishTime>
+      <publishTime>10/17/2019 13:34:38</publishTime>
     </File>
     <File Include="bin/Lucene.Net.dll">
-      <publishTime>08/19/2019 09:52:55</publishTime>
+      <publishTime>08/19/2019 10:52:55</publishTime>
     </File>
     <File Include="bin/Lucene.Net.pdb">
-      <publishTime>08/19/2019 09:52:55</publishTime>
+      <publishTime>08/19/2019 10:52:55</publishTime>
     </File>
     <File Include="bin/MediaEssentials.dll">
-      <publishTime>10/16/2019 11:53:03</publishTime>
+      <publishTime>10/17/2019 13:47:24</publishTime>
     </File>
     <File Include="bin/MediaEssentials.pdb">
-      <publishTime>10/16/2019 11:53:03</publishTime>
+      <publishTime>10/17/2019 13:47:24</publishTime>
     </File>
     <File Include="bin/MediaReferences.aspx">
-      <publishTime>06/14/2018 17:10:09</publishTime>
+      <publishTime>10/17/2019 12:35:21</publishTime>
     </File>
     <File Include="bin/MediaReferences.aspx.cs">
-      <publishTime>06/14/2018 17:08:13</publishTime>
+      <publishTime>10/17/2019 12:36:16</publishTime>
     </File>
     <File Include="bin/MediaReferences.aspx.designer.cs">
-      <publishTime>06/14/2018 14:46:46</publishTime>
+      <publishTime>10/17/2019 12:34:24</publishTime>
     </File>
     <File Include="bin/MediaSize.aspx">
-      <publishTime>10/16/2019 11:49:20</publishTime>
+      <publishTime>10/17/2019 12:35:21</publishTime>
     </File>
     <File Include="bin/MediaSize.aspx.cs">
-      <publishTime>10/16/2019 11:44:04</publishTime>
+      <publishTime>10/17/2019 12:36:16</publishTime>
     </File>
     <File Include="bin/MediaSize.aspx.designer.cs">
-      <publishTime>10/16/2019 11:43:40</publishTime>
+      <publishTime>10/17/2019 12:34:34</publishTime>
     </File>
     <File Include="bin/MediaUpdates.aspx">
-      <publishTime>06/14/2018 17:10:09</publishTime>
+      <publishTime>10/17/2019 12:34:44</publishTime>
     </File>
     <File Include="bin/MediaUpdates.aspx.cs">
-      <publishTime>06/14/2018 17:08:13</publishTime>
+      <publishTime>10/17/2019 12:36:16</publishTime>
     </File>
     <File Include="bin/MediaUpdates.aspx.designer.cs">
-      <publishTime>06/14/2018 14:46:24</publishTime>
+      <publishTime>10/17/2019 12:34:44</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll">
-      <publishTime>08/19/2019 09:52:56</publishTime>
+      <publishTime>08/19/2019 10:52:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.DependencyInjection.dll">
-      <publishTime>08/19/2019 09:52:56</publishTime>
+      <publishTime>08/19/2019 10:52:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>08/19/2019 09:52:56</publishTime>
+      <publishTime>08/19/2019 10:52:56</publishTime>
     </File>
     <File Include="bin/Mvp.Xml.dll">
-      <publishTime>08/19/2019 09:52:56</publishTime>
+      <publishTime>08/19/2019 10:52:56</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>08/19/2019 09:52:56</publishTime>
+      <publishTime>08/19/2019 10:52:56</publishTime>
     </File>
     <File Include="bin/RadEditor.Net2.dll">
-      <publishTime>08/19/2019 09:52:56</publishTime>
+      <publishTime>08/19/2019 10:52:56</publishTime>
     </File>
     <File Include="bin/RazorGenerator.Mvc.dll">
-      <publishTime>08/19/2019 09:52:56</publishTime>
+      <publishTime>08/19/2019 10:52:56</publishTime>
     </File>
     <File Include="bin/Sitecore.Kernel.dll">
-      <publishTime>08/19/2019 09:52:58</publishTime>
+      <publishTime>08/19/2019 10:52:58</publishTime>
     </File>
     <File Include="bin/Sitecore.Logging.Client.dll">
-      <publishTime>08/19/2019 09:52:58</publishTime>
+      <publishTime>08/19/2019 10:52:58</publishTime>
     </File>
     <File Include="bin/Sitecore.Logging.dll">
-      <publishTime>08/19/2019 09:52:58</publishTime>
+      <publishTime>08/19/2019 10:52:58</publishTime>
     </File>
     <File Include="bin/Sitecore.Mvc.dll">
-      <publishTime>08/19/2019 09:52:58</publishTime>
+      <publishTime>08/19/2019 10:52:58</publishTime>
     </File>
     <File Include="bin/Sitecore.NVelocity.dll">
-      <publishTime>08/19/2019 09:52:58</publishTime>
+      <publishTime>08/19/2019 10:52:58</publishTime>
     </File>
     <File Include="bin/Sitecore.Zip.dll">
-      <publishTime>08/19/2019 09:53:00</publishTime>
+      <publishTime>08/19/2019 10:53:00</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
-      <publishTime>08/19/2019 09:53:00</publishTime>
+      <publishTime>08/19/2019 10:53:00</publishTime>
     </File>
     <File Include="bin/System.Web.Http.dll">
-      <publishTime>08/19/2019 09:53:00</publishTime>
+      <publishTime>08/19/2019 10:53:00</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.dll">
-      <publishTime>08/19/2019 09:53:00</publishTime>
+      <publishTime>08/19/2019 10:53:00</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
-      <publishTime>08/19/2019 09:53:00</publishTime>
+      <publishTime>08/19/2019 10:53:00</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Deployment.dll">
-      <publishTime>08/19/2019 09:53:00</publishTime>
+      <publishTime>08/19/2019 10:53:00</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.dll">
-      <publishTime>08/19/2019 09:53:00</publishTime>
+      <publishTime>08/19/2019 10:53:00</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Razor.dll">
-      <publishTime>08/19/2019 09:53:00</publishTime>
+      <publishTime>08/19/2019 10:53:00</publishTime>
     </File>
     <File Include="bin/Telerik.Web.UI.dll">
-      <publishTime>08/19/2019 09:53:01</publishTime>
+      <publishTime>08/19/2019 10:53:01</publishTime>
     </File>
     <File Include="bin/UnusedMedia.aspx">
-      <publishTime>06/14/2018 16:33:34</publishTime>
+      <publishTime>10/17/2019 12:35:21</publishTime>
     </File>
     <File Include="bin/UnusedMedia.aspx.cs">
-      <publishTime>04/12/2018 13:30:30</publishTime>
+      <publishTime>10/17/2019 12:36:16</publishTime>
     </File>
     <File Include="bin/UnusedMedia.aspx.designer.cs">
-      <publishTime>04/12/2018 13:30:30</publishTime>
+      <publishTime>10/17/2019 12:35:00</publishTime>
     </File>
     <File Include="default.aspx">
       <publishTime>06/14/2018 14:18:56</publishTime>
     </File>
     <File Include="ExportMedia.aspx">
-      <publishTime>08/19/2019 10:20:20</publishTime>
+      <publishTime>10/17/2019 12:33:41</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>08/19/2019 10:20:20</publishTime>
+      <publishTime>08/19/2019 11:20:20</publishTime>
     </File>
     <File Include="Layout.Master">
-      <publishTime>08/19/2019 14:31:21</publishTime>
+      <publishTime>10/17/2019 13:35:33</publishTime>
     </File>
     <File Include="MediaReferences.aspx">
-      <publishTime>06/14/2018 17:10:09</publishTime>
+      <publishTime>10/17/2019 12:35:21</publishTime>
     </File>
     <File Include="MediaSize.aspx">
-      <publishTime>10/16/2019 11:49:20</publishTime>
+      <publishTime>10/17/2019 12:35:21</publishTime>
     </File>
     <File Include="MediaUpdates.aspx">
-      <publishTime>06/14/2018 17:10:09</publishTime>
+      <publishTime>10/17/2019 12:34:44</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.js">
-      <publishTime>08/19/2019 10:20:20</publishTime>
+      <publishTime>08/19/2019 11:20:20</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.min.js">
-      <publishTime>08/19/2019 10:20:20</publishTime>
+      <publishTime>08/19/2019 11:20:20</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.min.map">
-      <publishTime>08/19/2019 10:20:20</publishTime>
+      <publishTime>08/19/2019 11:20:20</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.js">
-      <publishTime>08/19/2019 10:20:20</publishTime>
+      <publishTime>08/19/2019 11:20:20</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.min.js">
-      <publishTime>08/19/2019 10:20:20</publishTime>
+      <publishTime>08/19/2019 11:20:20</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.unobtrusive.js">
-      <publishTime>08/19/2019 10:20:20</publishTime>
+      <publishTime>08/19/2019 11:20:20</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.unobtrusive.min.js">
-      <publishTime>08/19/2019 10:20:20</publishTime>
+      <publishTime>08/19/2019 11:20:20</publishTime>
     </File>
     <File Include="UnusedMedia.aspx">
-      <publishTime>08/19/2019 10:20:20</publishTime>
+      <publishTime>10/17/2019 12:35:21</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>08/19/2019 11:36:35</publishTime>
+      <publishTime>08/19/2019 12:36:35</publishTime>
     </File>
   </ItemGroup>
 </Project>

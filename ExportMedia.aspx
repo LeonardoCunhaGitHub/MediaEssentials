@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="Layout.Master" AutoEventWireup="true" CodeBehind="ExportMedia.aspx.cs" Inherits="MediaEssentials.ExportMedia" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="main" runat="server">
@@ -12,7 +13,18 @@
         </div>
     </div>
     
-    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true" ></asp:ScriptManager>
+    
+    <%--breadcrumb--%>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><asp:HyperLink ID="lnkDashboard" runat="server">Dashboard</asp:HyperLink></li>
+                <li class="breadcrumb-item active" aria-current="page">Export Media</li>
+            </ol>
+        </nav>
+    </div>
+
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true"></asp:ScriptManager>
     <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Always">
         <ContentTemplate>
 
@@ -21,7 +33,7 @@
                     <div class="form-group col-lg-6 ">
                         <div class="card">
                             <div class="card-header">
-                                Export
+                                Filter Options
                             </div>
                             <div class="card-body">
                                 <div class="row">
@@ -32,7 +44,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-lg-12">
-                                        <label  for="ddMediaFolders" class="col-form-label">Which media folder do you want to export?</label>
+                                        <label for="ddMediaFolders" class="col-form-label">Which media folder do you want to export?</label>
                                         <asp:DropDownList ID="ddMediaFolders" runat="server" CssClass="form-control" AutoPostBack="false"></asp:DropDownList>
                                     </div>
                                 </div>
@@ -59,13 +71,13 @@
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-lg-12">
-                                    
-                                        <asp:LinkButton ID="btnExport" runat="server" CssClass="btn btn-outline-primary" OnClick="btnExport_Click" >Export Media</asp:LinkButton>
 
-                                        <asp:LinkButton ID="btnDownload" runat="server" CssClass="btn btn-link" OnClick="btnDownload_Click" >Download Zip File</asp:LinkButton>
+                                        <asp:LinkButton ID="btnExport" runat="server" CssClass="btn btn-outline-primary" OnClick="btnExport_Click">Export Media</asp:LinkButton>
 
-                                    
-                                    
+                                        <asp:LinkButton ID="btnDownload" runat="server" CssClass="btn btn-link" OnClick="btnDownload_Click">Download Zip File</asp:LinkButton>
+
+
+
                                     </div>
                                 </div>
                             </div>

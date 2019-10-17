@@ -20,6 +20,8 @@ namespace MediaEssentials
 
             if (IsPostBack) return;
 
+            lnkDashboard.NavigateUrl = ((Layout)this.Master)?.MediaEssentialsURL;
+
             _mediaLibrary.SetDatabaseDropDown(ddDataBase);
 
             _mediaLibrary.SetMediaFoldersDropDown(ddMediaFolders, ddDataBase);
@@ -125,6 +127,9 @@ namespace MediaEssentials
             if (totalMediaUpdated == 0)
             {
                 output.AppendLine("No media ALT tag to be updated within the options set.");
+
+                //output of last execution
+                lbOutput.Text = output.ToString().Replace(Environment.NewLine, "<br />");
 
                 return;
             }

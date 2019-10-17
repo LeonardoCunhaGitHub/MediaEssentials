@@ -13,6 +13,15 @@ namespace MediaEssentials {
     public partial class MediaSize {
         
         /// <summary>
+        /// lnkDashboard control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink lnkDashboard;
+        
+        /// <summary>
         /// ScriptManager1 control.
         /// </summary>
         /// <remarks>
@@ -65,6 +74,24 @@ namespace MediaEssentials {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox chkIncludeSubFolders;
+        
+        /// <summary>
+        /// rbSizeLogic control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList rbSizeLogic;
+        
+        /// <summary>
+        /// ddMediaSizes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddMediaSizes;
         
         /// <summary>
         /// btnFilterMediaBySize control.
