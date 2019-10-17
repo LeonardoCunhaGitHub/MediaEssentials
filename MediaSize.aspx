@@ -10,12 +10,13 @@
             <p class="lead">This module identifies media items based on its size.</p>
         </div>
     </div>
-    
+
     <%--breadcrumb--%>
     <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><asp:HyperLink ID="lnkDashboard" runat="server">Dashboard</asp:HyperLink></li>
+                <li class="breadcrumb-item">
+                    <asp:HyperLink ID="lnkDashboard" runat="server">Dashboard</asp:HyperLink></li>
                 <li class="breadcrumb-item active" aria-current="page">Media Size</li>
             </ol>
         </nav>
@@ -66,17 +67,19 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <div class="alert alert-secondary" role="alert">
                                     <div class="row">
+
+
                                         <div class="form-group col-lg-12">
-                                            <label>
-                                                <asp:RadioButtonList ID="rbSizeLogic" runat="server">
+                                            <div class="form-check">
+                                                <asp:RadioButtonList ID="rbSizeLogic" runat="server" CssClass="form-check-input">
                                                     <asp:ListItem Text="  Greater Than" Value="0" Selected="True"></asp:ListItem>
                                                     <asp:ListItem Text="  Less Than" Value="1"></asp:ListItem>
                                                 </asp:RadioButtonList>
+                                            </div>
 
-                                            </label>
                                         </div>
 
                                     </div>
@@ -88,7 +91,7 @@
                                     </div>
                                 </div>
 
-                               
+
 
 
                                 <div class="row">

@@ -34,6 +34,13 @@ namespace MediaEssentials
 
             lnkDashboard.NavigateUrl = ((Layout)this.Master)?.MediaEssentialsURL;
 
+            //add class to the items of the radio button
+            foreach (ListItem item in rbSizeLogic.Items)
+            {
+                item.Attributes.Add("class", "form-check-label");
+               
+            }
+
             _mediaLibrary.SetDatabaseDropDown(ddDataBase);
 
             _mediaLibrary.SetMediaFoldersDropDown(ddMediaFolders, ddDataBase);
