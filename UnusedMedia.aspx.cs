@@ -23,6 +23,7 @@ namespace MediaEssentials
         {
             if (IsPostBack) return;
 
+            lnkDashboard.NavigateUrl = ((Layout)this.Master)?.MediaEssentialsURL;
 
             _mediaLibrary.SetDatabaseDropDown(ddDataBase);
 

@@ -10,6 +10,16 @@
             <p class="lead">This module is going to identify media items based on its size.</p>
         </div>
     </div>
+    
+    <%--breadcrumb--%>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><asp:HyperLink ID="lnkDashboard" runat="server">Dashboard</asp:HyperLink></li>
+                <li class="breadcrumb-item active" aria-current="page">Media Size</li>
+            </ol>
+        </nav>
+    </div>
 
     <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true"></asp:ScriptManager>
     <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Always">
