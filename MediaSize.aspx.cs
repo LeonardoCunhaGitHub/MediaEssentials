@@ -32,6 +32,8 @@ namespace MediaEssentials
 
             Session.Clear();
 
+            lnkDashboard.NavigateUrl = ((Layout)this.Master)?.MediaEssentialsURL;
+
             _mediaLibrary.SetDatabaseDropDown(ddDataBase);
 
             _mediaLibrary.SetMediaFoldersDropDown(ddMediaFolders, ddDataBase);
