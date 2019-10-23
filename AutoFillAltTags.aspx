@@ -44,7 +44,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-lg-12">
-                                        <label>Which media folder do you want to export?</label>
+                                        <label>Select the Media Folder</label>
                                         <asp:DropDownList ID="ddMediaFolders" runat="server" CssClass="form-control" AutoPostBack="false"></asp:DropDownList>
                                     </div>
                                 </div>

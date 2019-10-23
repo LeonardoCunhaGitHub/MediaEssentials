@@ -66,33 +66,30 @@ namespace MediaEssentials.Common
             }
         }
 
-        public void SetMediaSizesToDropDown(DropDownList dd)
+        public void SetMediaSizeLogicDropDown(DropDownList dd)
         {
             if (dd == null) return;
-            dd.Items.Add(new ListItem("100 K", "100000"));
-            dd.Items.Add(new ListItem("200 K", "200000"));
-            dd.Items.Add(new ListItem("300 K", "300000"));
-            dd.Items.Add(new ListItem("400 K", "400000"));
-            dd.Items.Add(new ListItem("500 K", "500000"));
-            dd.Items.Add(new ListItem("1 Mb", "1000000"));
-            dd.Items.Add(new ListItem("1.5 Mb", "1500000"));
-            dd.Items.Add(new ListItem("2 Mb", "2000000"));
-            dd.Items.Add(new ListItem("2.5 Mb", "2500000"));
-            dd.Items.Add(new ListItem("3 Mb", "3000000"));
-            dd.Items.Add(new ListItem("3.5 Mb", "3500000"));
-            dd.Items.Add(new ListItem("4 Mb", "4000000"));
-            dd.Items.Add(new ListItem("4.5 Mb", "4500000"));
-            dd.Items.Add(new ListItem("5 Mb", "5000000"));
-            dd.Items.Add(new ListItem("5.5 Mb", "5500000"));
-            dd.Items.Add(new ListItem("6 Mb", "6000000"));
-            dd.Items.Add(new ListItem("6.5 Mb", "6500000"));
-            dd.Items.Add(new ListItem("7 Mb", "7000000"));
-            dd.Items.Add(new ListItem("7.5 Mb", "7500000"));
-            dd.Items.Add(new ListItem("8 Mb", "8000000"));
-            dd.Items.Add(new ListItem("8.5 Mb", "8500000"));
-            dd.Items.Add(new ListItem("9 Mb", "9000000"));
-            dd.Items.Add(new ListItem("9.5 Mb", "9500000"));
-            dd.Items.Add(new ListItem("10 Mb", "10000000"));
+            dd.Items.Add(new ListItem("Greater than", "0"));
+            dd.Items.Add(new ListItem("Less than", "1"));
+        }
+
+        public void SetMediaDateLogicDropDown(DropDownList dd)
+        {
+            if (dd == null) return;
+            dd.Items.Add(new ListItem("On Selected Date", "0"));
+            dd.Items.Add(new ListItem("After Selected Date  (inclusive)", "1"));
+            dd.Items.Add(new ListItem("Before Selected Date (inclusive)", "2"));
+        }
+
+
+        public void SetSizeUnitDropDown(DropDownList dd)
+        {
+            if (dd == null) return;
+            dd.Items.Add(new ListItem("bytes", "0"));
+            dd.Items.Add(new ListItem("KBytes", "1"));
+            dd.Items.Add(new ListItem("MBytes", "2"));
+            dd.Items.Add(new ListItem("GBytes", "3"));
+
         }
 
         public static void AddItemToDropDown(DropDownList dd, Item i)

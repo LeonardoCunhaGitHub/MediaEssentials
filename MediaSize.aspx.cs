@@ -34,19 +34,14 @@ namespace MediaEssentials
 
             lnkDashboard.NavigateUrl = ((Layout)this.Master)?.MediaEssentialsURL;
 
-            //add class to the items of the radio button
-            foreach (ListItem item in rbSizeLogic.Items)
-            {
-                item.Attributes.Add("class", "form-check-label");
-               
-            }
 
             _mediaLibrary.SetDatabaseDropDown(ddDataBase);
 
             _mediaLibrary.SetMediaFoldersDropDown(ddMediaFolders, ddDataBase);
+            
+            _mediaLibrary.SetMediaSizeLogicDropDown(ddSizeLogic);
 
-
-            _mediaLibrary.SetMediaSizesToDropDown(ddMediaSizes);
+            _mediaLibrary.SetSizeUnitDropDown(ddSizeUnit);
 
             btnDownload.Visible = false;
 
@@ -114,8 +109,31 @@ namespace MediaEssentials
             };
             //                                           "doc", "docx", "pdf", "xls", "xlsx"
 
-            var sizeLogic = System.Convert.ToInt16(rbSizeLogic.SelectedValue);
-            var sizeToFilter = System.Convert.ToInt64(ddMediaSizes.SelectedValue);
+            var sizeLogic = System.Convert.ToInt16(ddSizeLogic.SelectedValue);
+            var sizeUnit = System.Convert.ToInt64(ddSizeUnit.SelectedValue);
+            double sizeToFilter = 0;
+
+            switch (sizeUnit)
+            {
+                case 0:
+                    sizeToFilter = System.Convert.ToInt64(tbSize.Text);
+                    break;
+
+                case 1:
+                    sizeToFilter = (double)(System.Convert.ToInt64(tbSize.Text) * 1000.00);
+                    break;
+
+                case 2:
+                    sizeToFilter = (double)(System.Convert.ToInt64(tbSize.Text) * 1000000.00);
+                    break;
+
+                case 3:
+                    sizeToFilter = (double)(System.Convert.ToInt64(tbSize.Text) * 1000000000.00);
+                    break;
+
+
+            }
+
 
             var totalMediaIdentified = 0;
             foreach (var m in allMediaItems)

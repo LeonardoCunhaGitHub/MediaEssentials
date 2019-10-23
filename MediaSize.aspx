@@ -42,7 +42,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-lg-12">
-                                        <label for="ddMediaFolders" class="col-form-label">Which media folder do you want to export?</label>
+                                        <label for="ddMediaFolders" class="col-form-label">Select the Media Folder</label>
                                         <asp:DropDownList ID="ddMediaFolders" runat="server" CssClass="form-control" AutoPostBack="false"></asp:DropDownList>
                                     </div>
                                 </div>
@@ -69,40 +69,31 @@
                                 </div>
 
                                 <div class="alert alert-secondary" role="alert">
+
+                                    <div class="row">
+                                        <div class="form-group col-lg-12">
+                                            <asp:DropDownList ID="ddSizeLogic" runat="server" CssClass="form-control"></asp:DropDownList>
+                                        </div>
+                                    </div>
                                     <div class="row">
 
-
-                                        <div class="form-group col-lg-12">
-                                            <div class="form-check">
-                                                <asp:RadioButtonList ID="rbSizeLogic" runat="server" CssClass="form-check-input">
-                                                    <asp:ListItem Text="  Greater Than" Value="0" Selected="True"></asp:ListItem>
-                                                    <asp:ListItem Text="  Less Than" Value="1"></asp:ListItem>
-                                                </asp:RadioButtonList>
-                                            </div>
-
+                                        <div class="form-group col-lg-6">
+                                            <asp:TextBox ID="tbSize" runat="server" Text="1000" CssClass="form-control"></asp:TextBox>
+                                            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server"
+                                                ControlToValidate="tbSize" runat="server"
+                                                ErrorMessage="Only Numbers allowed"
+                                                ValidationExpression="^\d+$"></asp:RegularExpressionValidator>
                                         </div>
 
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="form-group col-lg-12">
-                                            <asp:DropDownList ID="ddMediaSizes" runat="server" CssClass="form-control"></asp:DropDownList>
+                                        <div class="form-group col-lg-6">
+                                            <asp:DropDownList ID="ddSizeUnit" runat="server" CssClass="form-control"></asp:DropDownList>
                                         </div>
                                     </div>
                                 </div>
-
-
-
-
                                 <div class="row">
                                     <div class="form-group col-lg-12">
-
                                         <asp:LinkButton ID="btnFilterMediaBySize" runat="server" CssClass="btn btn-outline-primary" OnClick="btnFilterMediaBySize_OnClick">Find Media</asp:LinkButton>
-
                                         <asp:LinkButton ID="btnDownload" runat="server" CssClass="btn btn-link" OnClick="btnDownload_OnClick">Download Zip File</asp:LinkButton>
-
-
-
                                     </div>
                                 </div>
                             </div>
@@ -119,13 +110,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-            </div>
-
-
         </ContentTemplate>
     </asp:UpdatePanel>
 </asp:Content>

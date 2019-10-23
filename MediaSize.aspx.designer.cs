@@ -76,22 +76,40 @@ namespace MediaEssentials {
         protected global::System.Web.UI.WebControls.CheckBox chkIncludeSubFolders;
         
         /// <summary>
-        /// rbSizeLogic control.
+        /// ddSizeLogic control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList rbSizeLogic;
+        protected global::System.Web.UI.WebControls.DropDownList ddSizeLogic;
         
         /// <summary>
-        /// ddMediaSizes control.
+        /// tbSize control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddMediaSizes;
+        protected global::System.Web.UI.WebControls.TextBox tbSize;
+        
+        /// <summary>
+        /// RegularExpressionValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+        
+        /// <summary>
+        /// ddSizeUnit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddSizeUnit;
         
         /// <summary>
         /// btnFilterMediaBySize control.

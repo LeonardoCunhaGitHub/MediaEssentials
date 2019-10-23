@@ -60,10 +60,10 @@
             <div class="col-md-4">
                 <div class="card mb-5">
                     <div class="card-header">
-                        Media References
+                        On File System
                     </div>
                     <div class="card-body">
-                        <p class="card-text">List all items where each media is referred.</p>
+                        <p class="card-text">Identifies media stored on file system rather than on Database.</p>
                         <a class="btn btn-outline-primary btn-block" runat="server" href="~/sitecore/admin/mediaessentials/MediaReferences.aspx" role="button">Go &raquo;</a>
                     </div>
                 </div>
@@ -72,11 +72,11 @@
             <div class="col-md-4">
                 <div class="card mb-5">
                     <div class="card-header">
-                        Media Date Uploaded
+                        Date Uploaded
                     </div>
                     <div class="card-body">
                         <p class="card-text">List all media uploaded after specific date.</p>
-                        <a class="btn btn-outline-primary btn-block" runat="server" href="~/sitecore/admin/mediaessentials/MediaDateUploaded.aspx" role="button">Go &raquo;</a>
+                        <a class="btn btn-outline-primary btn-block" runat="server" href="~/sitecore/admin/mediaessentials/dateUploaded.aspx" role="button">Go &raquo;</a>
                     </div>
                 </div>
             </div>
@@ -88,7 +88,7 @@
                         Media Size
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Identify images larger than specific size.</p>
+                        <p class="card-text">Identifies media greater/less than specific size.</p>
                         <a class="btn btn-outline-primary btn-block" runat="server" href="~/sitecore/admin/mediaessentials/MediaSize.aspx" role="button">Go &raquo;</a>
                     </div>
                 </div>

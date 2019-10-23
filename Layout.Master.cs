@@ -13,8 +13,8 @@ namespace MediaEssentials
         public string ExportMedia = "";
         public string MeVersion = "";
         public string UnusedMedia = "";
-        public string MediaReferences = "";
-        public string MediaDateUploaded = "";
+        public string OnFileSystem = "";
+        public string dateUploaded = "";
         public string MediaSize = "";
 
         public string MediaEssentialsURL =  "http://" +
@@ -57,10 +57,10 @@ namespace MediaEssentials
                     UnusedMedia = "active";
                     break;
                 case "mediaReferences.aspx":
-                    MediaReferences = "active";
+                    OnFileSystem = "active";
                     break;
-                case "mediaDateUploaded.aspx":
-                    MediaDateUploaded = "active";
+                case "dateUploaded.aspx":
+                    dateUploaded = "active";
                     break;
                 case "mediasize.aspx":
                     MediaSize = "active";

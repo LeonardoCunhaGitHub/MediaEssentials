@@ -28,6 +28,8 @@ namespace MediaEssentials
             _mediaLibrary.SetDatabaseDropDown(ddDataBase);
 
             _mediaLibrary.SetMediaFoldersDropDown(ddMediaFolders, ddDataBase);
+
+            _mediaLibrary.SetMediaDateLogicDropDown(ddDateLogic);
         }
 
         protected void ddDataBase_OnSelectedIndexChanged(object sender, EventArgs e)
@@ -74,9 +76,9 @@ namespace MediaEssentials
                 TemplateIDs.MainSection.ToString(),
                 TemplateIDs.Node.ToString()
             };
-            //                                           "doc", "docx", "pdf", "xls", "xlsx"
+            // "doc", "docx", "pdf", "xls", "xlsx"
 
-            var selectedDate = calAfterDate.SelectedDate;
+            
 
 
             var totalMediaIdentified = 0;
@@ -91,6 +93,9 @@ namespace MediaEssentials
 
                 if (match != null) continue;
 
+                var sizeLogic = System.Convert.ToInt16(ddDateLogic.SelectedValue);
+                var selectedDate = calAfterDate.SelectedDate;
+
                 //loop all items and check its size
                 foreach (var l in installedLanguages)
                 {
@@ -101,8 +106,20 @@ namespace MediaEssentials
 
                     var imgUploadedDate = mediaData.MediaItem.InnerItem.Statistics.Updated;
 
-                    add = (imgUploadedDate.Date >= selectedDate.Date);
-                    
+                    if (sizeLogic == 0)
+                    {
+                        add = (imgUploadedDate.Date == selectedDate.Date);
+                    }
+
+                    if (sizeLogic == 1)
+                    {
+                        add = (imgUploadedDate.Date >= selectedDate.Date);
+                    }
+
+                    if (sizeLogic == 2)
+                    {
+                        add = (imgUploadedDate.Date <= selectedDate.Date);
+                    }
 
                     if (!add) continue;
 
