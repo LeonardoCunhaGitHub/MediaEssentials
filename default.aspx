@@ -64,7 +64,7 @@
                     </div>
                     <div class="card-body">
                         <p class="card-text">Identifies media stored on file system rather than on Database.</p>
-                        <a class="btn btn-outline-primary btn-block" runat="server" href="~/sitecore/admin/mediaessentials/MediaReferences.aspx" role="button">Go &raquo;</a>
+                        <a class="btn btn-outline-primary btn-block" runat="server" href="~/sitecore/admin/mediaessentials/OnFileSystem.aspx" role="button">Go &raquo;</a>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                         Date Uploaded
                     </div>
                     <div class="card-body">
-                        <p class="card-text">List all media uploaded after specific date.</p>
+                        <p class="card-text">Find all media uploaded based on a specific date.</p>
                         <a class="btn btn-outline-primary btn-block" runat="server" href="~/sitecore/admin/mediaessentials/dateUploaded.aspx" role="button">Go &raquo;</a>
                     </div>
                 </div>

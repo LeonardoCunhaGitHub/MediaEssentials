@@ -71,6 +71,8 @@ namespace MediaEssentials
 
         protected void btnFilterMediaBySize_OnClick(object sender, EventArgs e)
         {
+            if (!RegularExpressionValidator1.IsValid) return;
+
             //get selected folder
             var itemId = new ID(ddMediaFolders.SelectedValue);
 
@@ -112,23 +114,27 @@ namespace MediaEssentials
             var sizeLogic = System.Convert.ToInt16(ddSizeLogic.SelectedValue);
             var sizeUnit = System.Convert.ToInt64(ddSizeUnit.SelectedValue);
             double sizeToFilter = 0;
-
+            
+            double parsedValue;
+            double.TryParse(tbSize.Text.Replace(",","."), out parsedValue);
+            //if (!isRightFormat) 
+           
             switch (sizeUnit)
             {
                 case 0:
-                    sizeToFilter = System.Convert.ToInt64(tbSize.Text);
+                    sizeToFilter = Math.Floor(parsedValue * 1.00);
                     break;
 
                 case 1:
-                    sizeToFilter = (double)(System.Convert.ToInt64(tbSize.Text) * 1000.00);
+                    sizeToFilter = Math.Floor(parsedValue * 1000.00);
                     break;
 
                 case 2:
-                    sizeToFilter = (double)(System.Convert.ToInt64(tbSize.Text) * 1000000.00);
+                    sizeToFilter = Math.Floor(parsedValue * 1000000.00);
                     break;
 
                 case 3:
-                    sizeToFilter = (double)(System.Convert.ToInt64(tbSize.Text) * 1000000000.00);
+                    sizeToFilter = Math.Floor(parsedValue * 1000000000.00);
                     break;
 
 

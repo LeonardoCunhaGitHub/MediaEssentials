@@ -34,6 +34,14 @@ namespace MediaEssentials.Common
 
                 //if there is no media then don't list this database
                 if (allMediaItems.Count > 0) dd.Items.Add(new ListItem(db, db));
+
+                
+            }
+
+            var masterDbItem = dd.Items.FindByText("master");
+            if (masterDbItem != null)
+            {
+                masterDbItem.Selected = true;
             }
         }
 

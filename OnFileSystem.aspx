@@ -66,6 +66,17 @@
                                         </div>
                                     </div>
                                 </div>
+                                
+                                <div class="alert alert-secondary" role="alert">
+
+                                    <div class="checkbox">
+                                        <label>
+                                            <asp:CheckBox ID="chkIfFileExists" runat="server" />
+                                            Check if file really exists
+                                        </label>
+                                    </div>
+
+                                </div>
                                 <div class="row">
                                     <div class="form-group col-lg-12">
                                     

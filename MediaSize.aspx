@@ -82,7 +82,7 @@
                                             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server"
                                                 ControlToValidate="tbSize" runat="server"
                                                 ErrorMessage="Only Numbers allowed"
-                                                ValidationExpression="^\d+$"></asp:RegularExpressionValidator>
+                                                ValidationExpression="^[\d]+((\.|,)[\d]+)?$"></asp:RegularExpressionValidator>
                                         </div>
 
                                         <div class="form-group col-lg-6">

@@ -23,7 +23,7 @@ namespace MediaEssentials
             lnkDashboard.NavigateUrl = ((Layout)this.Master)?.MediaEssentialsURL;
 
             _mediaLibrary.SetDatabaseDropDown(ddDataBase);
-
+            
             _mediaLibrary.SetMediaFoldersDropDown(ddMediaFolders, ddDataBase);
 
             chkOnlyEmptyAltTags.Checked = true;
@@ -89,7 +89,6 @@ namespace MediaEssentials
                 if (match != null) continue;
 
                 //loop all items and export them to a csv file 
-
                 foreach (var l in installedLanguages)
                 {
                     var item = db.GetItem(m.ID, l);
@@ -106,7 +105,6 @@ namespace MediaEssentials
 
 
                     mediaData.MediaItem.BeginEdit();
-
                     mediaData.MediaItem.Alt = item.Name;
                     mediaData.MediaItem.EndEdit();
 
