@@ -76,31 +76,22 @@ namespace MediaEssentials {
         protected global::System.Web.UI.WebControls.CheckBox chkIncludeSubFolders;
         
         /// <summary>
-        /// chkIfFileExists control.
+        /// chkUploadFileToDB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkIfFileExists;
+        protected global::System.Web.UI.WebControls.CheckBox chkUploadFileToDB;
         
         /// <summary>
-        /// btnExport control.
+        /// btnFindMedia control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnExport;
-        
-        /// <summary>
-        /// btnDownload control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnDownload;
+        protected global::System.Web.UI.WebControls.LinkButton btnFindMedia;
         
         /// <summary>
         /// lbOutput control.

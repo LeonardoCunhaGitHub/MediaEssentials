@@ -112,7 +112,7 @@ namespace MediaEssentials.Common
 
             //postback will clear allMediaItems so we need to get values again
             var allMediaItems = includeSubFolders
-                ? db.SelectItems(selectedFolder.Paths.Path + "//*").ToList()
+                ? selectedFolder.Axes.GetDescendants().ToList()  //db.SelectItems(selectedFolder.Paths.Path + "//*").ToList()
                 : new List<Item>(selectedFolder.GetChildren()
                     .Where(x => x.TemplateID != TemplateIDs.MediaFolder && x.TemplateID != TemplateIDs.Node && x.TemplateID != TemplateIDs.MainSection));
 

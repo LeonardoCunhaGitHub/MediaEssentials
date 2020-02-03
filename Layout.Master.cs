@@ -35,7 +35,7 @@ namespace MediaEssentials
             lnkDashboard.NavigateUrl = MediaEssentialsURL;
 
             //var v = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
-            var v = new Version(2, 0, 0, 0);
+            var v = new Version(2, 1, 0, 0);
             MeVersion = v.Major + "." + v.Minor;
         }
 

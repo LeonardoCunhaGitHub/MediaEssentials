@@ -7,7 +7,6 @@
         <div class="container">
             <h1 class="display-3">On File System</h1>
             <p class="lead">This module identifies media stored on file system rather than on Database.</p>
-            <p class="lead">Files will be stored inside the DATA folder so you can download it at any time.</p>
         </div>
     </div>
     
@@ -71,21 +70,17 @@
 
                                     <div class="checkbox">
                                         <label>
-                                            <asp:CheckBox ID="chkIfFileExists" runat="server" />
-                                            Check if file really exists
+                                            <asp:CheckBox ID="chkUploadFileToDB" runat="server" />
+                                            Upload File to DB
                                         </label>
                                     </div>
 
                                 </div>
+                                
+
                                 <div class="row">
                                     <div class="form-group col-lg-12">
-                                    
-                                        <asp:LinkButton ID="btnExport" runat="server" CssClass="btn btn-outline-primary" OnClick="btnExport_Click" >Export Media</asp:LinkButton>
-
-                                        <asp:LinkButton ID="btnDownload" runat="server" CssClass="btn btn-link" OnClick="btnDownload_Click" >Download Zip File</asp:LinkButton>
-
-                                    
-                                    
+                                        <asp:LinkButton ID="btnFindMedia" runat="server" CssClass="btn btn-outline-primary" OnClick="btnFindMedia_OnClick" >Find Media</asp:LinkButton>
                                     </div>
                                 </div>
                             </div>
